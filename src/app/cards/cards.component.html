@@ -1,0 +1,78 @@
+<mat-card >
+    <mat-card-header style="border-radius: 5px; background-color: red;margin-bottom: 5px;">
+        <mat-card-title>
+           <h2>Dashboard</h2>
+        </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content fxLayout="row" fxLayoutGap="5px" fxLayout.xs="column">
+
+        <mat-card fxFlex fxLayout="column" class="inner-card" >
+            <mat-card-header style="justify-content: center;" fxFlex>
+
+            <mat-card-title  >
+                <h2>Total Category:</h2>
+
+
+             </mat-card-title>
+            </mat-card-header >
+
+             <mat-card-content fxFlex>
+                 <h1 class="text-center">{{data?.category}}</h1>
+            </mat-card-content>
+
+            <mat-card-actions fxLayout="row" fxFlex >
+                <button mat-button style="background-color: red; margin-bottom: 3px;" fxFlex [routerLink]="['/cafe/dashboard/category']" >View Category</button>
+    
+    
+            </mat-card-actions>
+            
+        </mat-card>
+        <mat-card fxFlex fxLayout="column" class="inner-card">
+            <mat-card-header style="justify-content: center;" fxFlex >
+
+            <mat-card-title>
+                <h2>Total Products:</h2>
+
+
+             </mat-card-title>
+            </mat-card-header>
+
+             <mat-card-content fxFlex>
+                 <h1 class="text-center">{{data?.product}}</h1>
+            </mat-card-content>
+            <mat-card-actions fxLayout="row" class="actions" fxFlex>
+                <button mat-button style="background-color: red; margin-bottom: 3px;" fxFlex [routerLink]="['/cafe/dashboard/product']" >View Product</button>
+    
+    
+            </mat-card-actions>
+            
+        </mat-card>
+        <mat-card fxFlex fxLayout="column" class="inner-card">
+            <mat-card-header style="justify-content: center;" fxFlex >
+
+            <mat-card-title>
+                <h2>Total Bill Cost:</h2>
+
+
+             </mat-card-title>
+            </mat-card-header>
+
+             <mat-card-content fxFlex>
+                 <h1 class="text-center">2</h1>
+            </mat-card-content>
+            <mat-card-actions fxLayout="row" class="actions" fxFlex>
+                <button mat-button style="background-color: red; margin-bottom: 3px;" fxFlex [routerLink]="['/cafe/dashboard/bill']" >View Bill</button>
+    
+    
+            </mat-card-actions>
+            
+        </mat-card>
+    </mat-card-content>
+
+
+
+    
+
+
+</mat-card>

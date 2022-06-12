@@ -1,0 +1,48 @@
+<div class="loader-container" *ngIf="loading$ | async ">
+    <mat-spinner style="top: 50%; left: 50%;"></mat-spinner>
+ 
+
+
+
+</div>
+<mat-toolbar class="header">
+<mat-toolbar-row fxLayoutAlign="space-between center" >
+   
+<div >
+    <button mat-icon-button   value="sidebarclosed" (click)="toggle()" style="vertical-align: bottom;" *ngIf="router.url !== '/' && devicexs ">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <a href="#" class="logo" >
+        <mat-icon>storefront</mat-icon> Cafe Management System
+      </a>
+
+</div>
+<div *ngIf="!devicexs" fxLayout="row" fxLayoutGap="20px">
+    <a (click)="signupAction()" class="navlink" *ngIf="router.url== '/'">Sign Up</a>
+    <a (click)="logIn()" class="navlink" *ngIf="router.url== '/'">Log In</a>
+    
+
+
+</div>
+<mat-menu #appmenu="matMenu">
+    <button mat-menu-item (click)="changepass()">
+       <mat-icon>password</mat-icon> Change Password
+
+    </button>
+    <button mat-menu-item (click)="logOut()">
+      <mat-icon>exit_to_app</mat-icon>  Log Out
+        
+    </button>
+    
+
+</mat-menu>
+<button mat-flat-button [matMenuTriggerFor]="appmenu" *ngIf="router.url!== '/'"><mat-icon>account_circle</mat-icon></button>
+</mat-toolbar-row>
+<mat-toolbar-row *ngIf="devicexs" fxLayoutAlign="space-between end">
+    <a (click)="signupAction()" class="navlink" *ngIf="router.url== '/'">Sign Up</a>
+    <a (click)="forgotPasswordAction()" class="navlink" *ngIf="router.url== '/'">forgot Password?!</a>
+    <a (click)="logIn()" class="navlink" *ngIf="router.url== '/'">Log In</a>
+
+    
+</mat-toolbar-row>
+</mat-toolbar>

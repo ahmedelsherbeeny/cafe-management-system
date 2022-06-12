@@ -1,0 +1,69 @@
+
+
+
+.banner{
+   /* Add the blur effect */
+   filter: blur(5px);
+   -webkit-filter: blur(5px);
+   
+   /* Full height */
+   height: 100%; 
+   
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+}
+@media (max-width:376px){
+  .header{
+    margin-bottom: 3px;
+  }
+  .logo{
+    font-size: small;
+  }
+  .navlink{
+    font-size: small;
+
+
+  }
+  
+
+}
+@media (max-width:391px){
+  .logo{
+    font-size: small;
+  }
+  .navlink{
+    font-size: small;
+
+
+  }
+
+}
+@media (max-width:361px){
+  .logo{
+    font-size: small;
+  }
+  .navlink{
+    font-size: small;
+    
+
+
+  }
+
+}
+@media (max-width:900px){
+  .header{
+    margin-bottom: 3px;
+  }
+  
+
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
+
+

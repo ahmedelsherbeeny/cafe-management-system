@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  //responsibe table
+  .black-snackbar{
+    background-color: #000 !important;
+    color: white !important;
+  }
+  
+  .green-snackbar{
+    background-color:green !important;
+    color: white !important;
+  }
+  @media(max-width:800px){
+    .responsive-table{
+        overflow-x: auto;
+    }
+    .mat-table{
+      min-width: 800px;
+
+    }
+}
+ 

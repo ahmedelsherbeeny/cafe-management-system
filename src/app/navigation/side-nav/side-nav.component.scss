@@ -1,0 +1,20 @@
+.list-item-active{
+    ::ng-deep{
+        .mat-list-item-content{
+            background: red;
+            &:hover{
+                background: red;
+            }
+        }
+    }
+    
+}
+.mat-list-item{
+    margin-bottom: 20px;
+    ::ng-deep{
+        .mat-list-item-content{
+            border-radius: 5px;
+            margin: 0 8px;
+        }
+    }
+}
