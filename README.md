@@ -72,6 +72,10 @@ User first sign up then log in and after being activated by admin he can make or
 ### the user can print his bill as pdf
 ![7](https://user-images.githubusercontent.com/57103852/200340391-cb7cbe2b-1170-42e3-9d20-edeef1ae49d4.png)
 
+### the user can change his password
+![8](https://user-images.githubusercontent.com/57103852/200341437-6585cca3-3b23-4642-83a2-76440de711a1.png)
+
+
 
 
 
