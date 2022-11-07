@@ -21,6 +21,7 @@ export class CardsComponent implements OnInit {
 	getTheDetails(){
 		this.dashser.getDetails().subscribe((response:any)=>{
 			this.data=response
+			console.log(response)
 
 		})
 	}

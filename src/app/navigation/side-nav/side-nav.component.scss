@@ -1,9 +1,9 @@
 .list-item-active{
     ::ng-deep{
         .mat-list-item-content{
-            background: red;
+            background: rgb(18, 18, 213);
             &:hover{
-                background: red;
+                background:inherit;
             }
         }
     }

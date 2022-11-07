@@ -20,7 +20,7 @@ export class LoaderInterceptorService implements HttpInterceptor {
       finalize(()=>{
         setTimeout(() => {
           this.loader.hide()
-        }, 3000);
+        }, 1000);
 
       })
     )

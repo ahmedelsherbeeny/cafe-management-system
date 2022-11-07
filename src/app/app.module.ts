@@ -25,7 +25,6 @@ import { AuthTokenInterceptor } from './services/auth-token.interceptor';
 import { RouterGuardService } from './services/router-guard.service';
 import { SideNavComponent } from './navigation/side-nav/side-nav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { TryOneComponent } from './try-one/try-one.component';
 import { CardsComponent } from './cards/cards.component';
 import { ConfirmationComponent } from './material-component/dialog/confirmation/confirmation.component';
 import { ChangePasswordComponent } from './material-component/dialog/change-password/change-password.component';
@@ -40,7 +39,7 @@ import { ManageUsersComponent } from './manage-users/manage-users.component';
 
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     HomeComponent,
     BestSellerComponent,
@@ -53,7 +52,6 @@ import { ManageUsersComponent } from './manage-users/manage-users.component';
     LoginComponent,
     DashboardComponent,
     SideNavComponent,
-    TryOneComponent,
     CardsComponent,
     ConfirmationComponent,
     ChangePasswordComponent,
@@ -79,7 +77,7 @@ import { ManageUsersComponent } from './manage-users/manage-users.component';
     HttpClientModule,
     LayoutModule,
   ],
-  
+
   providers: [
 
     {provide:HTTP_INTERCEPTORS,useClass:LoaderInterceptorService,multi:true},
